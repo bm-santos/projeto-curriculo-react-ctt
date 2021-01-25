@@ -23,8 +23,8 @@ function App() {
       {
         id: 2,
         tipo: 'E-MAIL',
-        contato: 'bm-santos@outlook.com.br',
-        link: 'mailto:bm-santos@outlook.com.br'
+        contato: 'bm.sant@outlook.com',
+        link: 'mailto:bm.sant@outlook.com'
       },
       {
         id: 3,

@@ -105,6 +105,7 @@ h3::after {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  color: #b89516;
 }
 
 .experience-item  date,
@@ -181,6 +182,8 @@ h3::after {
   max-width: 100%;
   border-radius: 50%;
   align-items: center;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
 .biografia {

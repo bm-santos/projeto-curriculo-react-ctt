@@ -1,6 +1,7 @@
 import React from 'react'
 
 function ProfessionalProfile(props) {
+    const { perfilProfissional } = props.resposta
     return (
         <>
             <div className="titulo">
@@ -8,7 +9,7 @@ function ProfessionalProfile(props) {
       </div>
 
             <div className="perfil-profissional">
-                <p>{props.resposta.perfilProfissional}</p>
+                <p>{perfilProfissional}</p>
             </div>
         </>
     )

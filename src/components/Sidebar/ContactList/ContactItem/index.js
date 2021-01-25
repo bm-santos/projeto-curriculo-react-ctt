@@ -1,12 +1,12 @@
 import React from 'react'
 
 function ContactItem(props) {
-    console.log(props)
+    const { tipo, link, contato } = props
 
     return (
         <div className="item-contato">
-            <h4>{props.tipo}</h4>
-            <p><a href={props.link}>{props.contato}</a></p>
+            <h4>{tipo}</h4>
+            <p><a href={link} target="blank">{contato}</a></p>
         </div>
     )
 }

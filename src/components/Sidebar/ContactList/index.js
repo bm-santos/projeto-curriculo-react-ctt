@@ -3,6 +3,9 @@ import ContactItem from './ContactItem'
 
 function ContactList(props) {
     const [contactSection, showContactSection] = useState(false)
+    const { contatos } = props.resposta
+
+    let mensagem = "Mostrar Contatos"
 
     const showSection = () => {
         showContactSection(!contactSection)
@@ -13,18 +16,18 @@ function ContactList(props) {
             <div className="sidebar">
                 <h3>Contatos</h3>
 
-                <button onClick={showSection}>Mostrar Contatos</button>
-
+                <button id="botao" onClick={showSection}>{mensagem}</button>
                 <div className="lista-de-contatos">
-                        {
-                            contactSection &&
-                            <>
-                                {props.resposta.map(item => (
-                                    <ContactItem key={item.id} tipo={item.tipo} contato={item.contato} link={item.link}/>
-                                ))
-                                }
-                            </>
-                        }
+                    {
+                        contactSection &&
+                        <>
+                            {contatos.map(item => (
+
+                                < ContactItem key={item.id} tipo={item.tipo} contato={item.contato} link={item.link} />
+                            ))
+                            }
+                        </>
+                    }
                 </div>
 
             </div>

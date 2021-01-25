@@ -1,19 +1,21 @@
 import React from 'react'
 
 function ExperienceItem(props) {
-    
+    const {cargo, periodo, empresa, local, conteudo} = props
+
+
     return (
         <div className="experience-item">
 
             <div>
-                <h4>{props.cargo}</h4>
-                <span>{props.periodo}</span>
+                <h4>{cargo}</h4>
+                <span>{periodo}</span>
 
-                <strong>{props.empresa}</strong>
-                <span>{props.local}</span>
+                <strong>{empresa}</strong>
+                <span>{local}</span>
             </div>
             <p>
-                {props.conteudo}
+                {conteudo}
         </p>
         </div>
     )
