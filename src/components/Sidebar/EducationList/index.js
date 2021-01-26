@@ -2,7 +2,7 @@ import React from 'react'
 import EducationItem from './EducationItem'
 
 function EducationList(props) {
-    const { educacao } = props.resposta
+    const educacao = props.dadosEducacao
     return (
         <>
             <div className="sidebar">

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./App.css"
 import ExperienceList from './components/ExperienceList'
-import Bio from './components/Bio'
-import ProfessionalProfile from './components/ProfessionalProfile'
+import Perfil from './components/Perfil'
 import Sidebar from './components/Sidebar'
 
 function App() {
@@ -23,8 +22,8 @@ function App() {
       {
         id: 2,
         tipo: 'E-MAIL',
-        contato: 'bm.sant@outlook.com',
-        link: 'mailto:bm.sant@outlook.com'
+        contato: 'bm.santos@outlook.com',
+        link: 'mailto:bm.santos@outlook.com'
       },
       {
         id: 3,
@@ -82,7 +81,7 @@ function App() {
       },
       {
         id: 2,
-        cargo: 'Garçom e Host',
+        cargo: 'Garçom',
         periodo: '2017 a 2019',
         empresa: 'Black Hide Steakhouse by Gambaro',
         local: 'Brisbane, Austrália',
@@ -111,13 +110,11 @@ function App() {
 
   return (
     <main>
-      <Bio resposta={resposta} />
+      <Perfil dadosPerfil={resposta} />
       
-      <ProfessionalProfile resposta={resposta} />
-      
-      <Sidebar resposta={resposta} />
+      <Sidebar dadosContatos={resposta.contatos} dadosEducacao={resposta.educacao}/>
 
-      <ExperienceList resposta={resposta} />
+      <ExperienceList dadosExperiencia={resposta.experiencia} />
 
     </main>
   );

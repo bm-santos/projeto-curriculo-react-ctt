@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Bio(props) {
+function Perfil(props) {
     //console.log(props.resposta)
-    const {nome, ocupacao, resumo} = props.resposta
+    const {nome, ocupacao, resumo, perfilProfissional} = props.dadosPerfil
     
     return (
         <>
@@ -14,8 +14,16 @@ function Bio(props) {
                 <div className="ocupacao">{ocupacao}</div>
                 <p>{resumo}</p>
             </div>
+
+            <div className="titulo">
+                Perfil <br /> Profissional
+            </div>
+
+            <div className="perfil-profissional">
+                <p>{perfilProfissional}</p>
+            </div>
         </>
     )
 }
 
-export default Bio
+export default Perfil

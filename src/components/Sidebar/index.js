@@ -3,12 +3,14 @@ import EducationList from './EducationList'
 import ContactList from './ContactList'
 
 function Sidebar(props) {
+    const contatos = props.dadosContatos
+    const educacao = props.dadosEducacao
 
     return (
         <aside>
-            <ContactList resposta={props.resposta} />
+            <ContactList dadosContatos={contatos} />
 
-            <EducationList resposta={props.resposta} />
+            <EducationList dadosEducacao={educacao} />
         </aside>
     )
 }
