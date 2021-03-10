@@ -1,13 +1,14 @@
 import React from 'react'
 
 function Perfil(props) {
-    //console.log(props.resposta)
     const {nome, ocupacao, resumo, perfilProfissional} = props.dadosPerfil
     
     return (
         <>
             <div className="perfil">
-                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEEkc94fFLMCg/profile-displayphoto-shrink_200_200/0/1602804324688?e=1616630400&v=beta&t=-c4jR_k2W1d4QiaZMvij-PinzvrN2ki-vYgmGt7czJ8" alt="Perfil" />
+                <img 
+                src="https://media-exp1.licdn.com/dms/image/C4D03AQEEkc94fFLMCg/profile-displayphoto-shrink_200_200/0/1602804324688?e=1616630400&v=beta&t=-c4jR_k2W1d4QiaZMvij-PinzvrN2ki-vYgmGt7czJ8" 
+                alt={nome} />
             </div>
             <div className="biografia">
                 <h1>{nome}</h1>
